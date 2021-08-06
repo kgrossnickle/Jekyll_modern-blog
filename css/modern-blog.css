@@ -1,5 +1,42 @@
 
+@font-face {
+    font-family: 'comicfont';
+    font-weight: bold;
+    src: url("/fonts/comicfont.woff") format("woff"), url("/fonts/comicfont.ttf")  format("truetype");
+}
+h1{
+  font-family: 'comicfont', serif;
+  font-size: 98px !important;
+}
+@font-face {
+    font-family: 'comicdark';
+    font-weight: bold;
+    src: url("/fonts/comicdark.woff") format("woff"), url("/fonts/comicdark.ttf")  format("truetype");
+}
+h2{
+	  font-family: 'comicdark' ;
+  font-size: 38px !important;
+}
 /*CARD */
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .card {
 	position: relative;
@@ -50,7 +87,7 @@
 	width: 100%;
 	max-width: 800px;
 	height: auto;
-	margin: 400px auto 60px;
+	margin: 100px auto 60px;
 	padding: 30px 40px 22px;
 	background: #fff;
 }
@@ -206,8 +243,8 @@ body {
 	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	color: #3b393d;
-	background: #f0f0f0;
-	background-size: cover;
+	/*background: #f0f0f0;
+	background-size: cover;*/
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
@@ -238,9 +275,7 @@ a:focus {
 	color: #3b393d;
 }
 
-.body {
-	background: #acaad1;
-}
+
 
 .body a {
 	color: #4f4c4c;
